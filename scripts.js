@@ -49,13 +49,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 // Toggle mobile menu visibility
-document.addEventListener('DOMContentLoaded', function () {
-    const canvasOpen = document.querySelector('.canvas__open');
-    const mobileMenu = document.querySelector('.mobile-menu');
+// document.addEventListener('DOMContentLoaded', function () {
+//     const canvasOpen = document.querySelector('.canvas__open');
+//     const mobileMenu = document.querySelector('.mobile-menu');
 
-    canvasOpen.addEventListener('click', function () {
-        mobileMenu.classList.toggle('show');
-    });
-});
+//     canvasOpen.addEventListener('click', function () {
+//         mobileMenu.classList.toggle('show');
+//     });
+// });
 
 
