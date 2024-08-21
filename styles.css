@@ -1,0 +1,245 @@
+/* styles.css */
+
+/* Modal styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    /* Adjust as needed */
+    max-width: 700px;
+    /* Adjust as needed */
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style for the Order link */
+.order-text {
+    display: block;
+    margin-top: 10px;
+    color: #007bff;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Make the text bold */
+    text-align: center;
+    /* Center the text */
+}
+
+.order-text:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Modal Styles */
+/* Modal Styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    /* Centered with margin from top */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    /* Full width minus some margins */
+    max-width: 500px;
+    /* Optional: restrict maximum width */
+    text-align: center;
+    /* Center the text */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style for the link in the modal */
+.modal-content a {
+    color: #007bff;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        /* Adjust width for smaller screens */
+        margin: 20% auto;
+        /* Adjust top margin for better vertical centering */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        width: 100%;
+        /* Full width for very small screens */
+        margin: 30% auto;
+        /* Adjust top margin */
+        padding: 15px;
+        /* Reduce padding */
+    }
+
+    .close {
+        font-size: 24px;
+        /* Smaller close button on very small screens */
+    }
+}
+
+/* Modal Styles */
+/* Modal Styles */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    /* Centered with margin from top */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    /* Full width minus some margins */
+    max-width: 500px;
+    /* Optional: restrict maximum width */
+    text-align: center;
+    /* Center the text */
+}
+
+/* Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Style for the link in the modal */
+.modal-content a {
+    color: #007bff;
+    /* Link color */
+    text-decoration: none;
+    /* Remove underline */
+}
+
+.modal-content a:hover {
+    text-decoration: underline;
+    /* Underline on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+        /* Adjust width for smaller screens */
+        margin: 20% auto;
+        /* Adjust top margin for better vertical centering */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .modal-content {
+        width: 100%;
+        /* Full width for very small screens */
+        margin: 30% auto;
+        /* Adjust top margin */
+        padding: 15px;
+        /* Reduce padding */
+    }
+
+    .close {
+        font-size: 24px;
+        /* Smaller close button on very small screens */
+    }
+}

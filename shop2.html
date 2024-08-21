@@ -7,7 +7,7 @@
     <meta name="keywords" content="Male_Fashion, unica, creative, html">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Male-Fashion | Template</title>
+    <title>Selita Finesse</title>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap"
@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="./styles.css" type="text/css">
 </head>
 
 <body>
@@ -47,14 +48,6 @@
                         <li><a href="./contact.html">Contacts</a></li>
                     </ul>
                 </nav>
-            </div>
-            <div class="col-lg-3 col-md-3">
-                <div class="header__nav__option">
-                    <a href="#" class="search-switch"><img src="img/icon/search.png" alt=""></a>
-                    <a href="#"><img src="img/icon/heart.png" alt=""></a>
-                    <a href="#"><img src="img/icon/cart.png" alt=""> <span>0</span></a>
-                    <div class="price">$0.00</div>
-                </div>
             </div>
         </div>
         <div class="canvas__open"><i class="fa fa-bars"></i></div>
@@ -115,6 +108,7 @@
                         </div>
                     </div>
                     <div class="row">
+                        <!-- Product Block on the new HTML page -->
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p15.jpg">
@@ -126,15 +120,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Piqué Biker Jacket</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Moonlit Allure🔥✨</h6>
+
                                     <h5>$67.24</h5>
                                     <div class="product__color__select">
                                         <label for="pc-4">
@@ -147,13 +134,32 @@
                                             <input type="radio" id="pc-6">
                                         </label>
                                     </div>
+                                    <!-- Unique Order link -->
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
                                 </div>
                             </div>
                         </div>
+
+                        <!-- Modal Structure -->
+                        <div id="orderModalP15" class="modal">
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>We are currently taking orders through our Instagram: <a
+                                        href="https://www.instagram.com/selita.finesse/"
+                                        target="_blank">https://www.instagram.com/selita.finesse/</a></p>
+                            </div>
+                        </div>
+
+
+                        <div id="myModal" class="modal">
+                            <span class="close" onclick="closeModal()">&times;</span>
+                            <img class="modal-content" id="modalImage">
+                        </div>
+
                         <div class="col-lg-4 col-md-6 col-sm-6">
-                            <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p16.jpg">
-                                    <span class="label">Sale</span>
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p33.jpg"
+                                    onclick="openModal('img/product/p16.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -162,15 +168,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Multi-pocket Chest Bag</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Moonlit Allure🔥✨</h6>
+
                                     <h5>$43.48</h5>
                                     <div class="product__color__select">
                                         <label for="pc-7">
@@ -183,12 +182,15 @@
                                             <input type="radio" id="pc-9">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p3.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p30.jpg"
+                                    onclick="openModal('img/product/p1.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -197,15 +199,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Diagonal Textured Cap</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Moonlit Allure🔥✨</h6>
+
                                     <h5>$60.9</h5>
                                     <div class="product__color__select">
                                         <label for="pc-10">
@@ -218,13 +213,14 @@
                                             <input type="radio" id="pc-12">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p4.jpg">
-                                    <span class="label">Sale</span>
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p40.jpg">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -233,15 +229,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Ankle Boots</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Aqua Radiance🩵🦋</h6>
+
                                     <h5>$98.49</h5>
                                     <div class="product__color__select">
                                         <label for="pc-16">
@@ -254,12 +243,14 @@
                                             <input type="radio" id="pc-18">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p5.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p41.jpg">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -268,15 +259,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>T-shirt Contrast Pocket</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Aqua Radiance🩵🦋</h6>
+
                                     <h5>$49.66</h5>
                                     <div class="product__color__select">
                                         <label for="pc-19">
@@ -289,12 +273,14 @@
                                             <input type="radio" id="pc-21">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p6.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p26.jpg">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -303,15 +289,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Basic Flowing Scarf</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Aqua Radiance🩵🦋</h6>
+
                                     <h5>$26.28</h5>
                                     <div class="product__color__select">
                                         <label for="pc-22">
@@ -324,12 +303,14 @@
                                             <input type="radio" id="pc-24">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p7.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p32.jpg">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -338,15 +319,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Piqué Biker Jacket</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Midnight Majesty✨🌟</h6>
+
                                     <h5>$67.24</h5>
                                     <div class="product__color__select">
                                         <label for="pc-25">
@@ -359,13 +333,14 @@
                                             <input type="radio" id="pc-27">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p8.jpg">
-                                    <span class="label">Sale</span>
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p44.jpg">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -374,15 +349,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Multi-pocket Chest Bag</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Midnight Majesty✨🌟</h6>
+
                                     <h5>$43.48</h5>
                                     <div class="product__color__select">
                                         <label for="pc-28">
@@ -395,12 +363,14 @@
                                             <input type="radio" id="pc-30">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p9.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p23.jpg">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -409,15 +379,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Diagonal Textured Cap</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Midnight Majesty✨🌟</h6>
+
                                     <h5>$60.9</h5>
                                     <div class="product__color__select">
                                         <label for="pc-31">
@@ -430,13 +393,14 @@
                                             <input type="radio" id="pc-33">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item sale">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p10.jpg">
-                                    <span class="label">Sale</span>
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p38.jpg">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -445,15 +409,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Ankle Boots</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Petal Charm🌿✨</h6>
+
                                     <h5>$98.49</h5>
                                     <div class="product__color__select">
                                         <label for="pc-34">
@@ -466,12 +423,14 @@
                                             <input type="radio" id="pc-36">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p11.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p36.jpg">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -480,15 +439,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>T-shirt Contrast Pocket</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Petal Charmt🌿✨</h6>
+
                                     <h5>$49.66</h5>
                                     <div class="product__color__select">
                                         <label for="pc-37">
@@ -501,12 +453,14 @@
                                             <input type="radio" id="pc-39">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p12.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p8.jpg">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -515,15 +469,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Basic Flowing Scarf</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Petal Charm🌿✨</h6>
+
                                     <h5>$26.28</h5>
                                     <div class="product__color__select">
                                         <label for="pc-40">
@@ -536,12 +483,14 @@
                                             <input type="radio" id="pc-42">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p13.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p35.jpg">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -550,15 +499,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Basic Flowing Scarf</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Golden Dazzle💛🌟</h6>
+
                                     <h5>$26.28</h5>
                                     <div class="product__color__select">
                                         <label for="pc-40">
@@ -571,12 +513,14 @@
                                             <input type="radio" id="pc-42">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
-                                <div class="product__item__pic set-bg" data-setbg="img/product/p14.jpg">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p29.jpg">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -585,15 +529,8 @@
                                     </ul>
                                 </div>
                                 <div class="product__item__text">
-                                    <h6>Basic Flowing Scarf</h6>
-                                    <a href="#" class="add-cart">+ Add To Cart</a>
-                                    <div class="rating">
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                        <i class="fa fa-star-o"></i>
-                                    </div>
+                                    <h6>Golden Dazzle💛🌟</h6>
+
                                     <h5>$26.28</h5>
                                     <div class="product__color__select">
                                         <label for="pc-40">
@@ -606,21 +543,26 @@
                                             <input type="radio" id="pc-42">
                                         </label>
                                     </div>
+                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+
                                 </div>
+
                             </div>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-lg-12">
                             <div class="product__pagination">
-                                <a class="active" href="#">1</a>
-                                <a href="#">2</a>
+                                <a href="./shop.html">1</a>
+                                <a class="active" href="#">2</a>
                                 <a href="#">3</a>
                                 <span>...</span>
                                 <a href="#">21</a>
                             </div>
                         </div>
+
                     </div>
+
                 </div>
             </div>
         </div>
@@ -634,46 +576,14 @@
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="footer__about">
                         <div class="footer__logo">
-                            <a href="#"><img src="img/footer-logo.png" alt=""></a>
+                            <a href="#"><img src="img/logo.png" alt=""></a>
                         </div>
-                        <p>The customer is at the heart of our unique business model, which includes design.</p>
-                        <a href="#"><img src="img/payment.png" alt=""></a>
+                        <p>At the core of our fashion brand lies a commitment to our customers. We believe that
+                            exceptional design begins with understanding your needs and desires.</p>
                     </div>
                 </div>
-                <div class="col-lg-2 offset-lg-1 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>Shopping</h6>
-                        <ul>
-                            <li><a href="#">Clothing Store</a></li>
-                            <li><a href="#">Trending Shoes</a></li>
-                            <li><a href="#">Accessories</a></li>
-                            <li><a href="#">Sale</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-3 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>Shopping</h6>
-                        <ul>
-                            <li><a href="#">Contact Us</a></li>
-                            <li><a href="#">Payment Methods</a></li>
-                            <li><a href="#">Delivary</a></li>
-                            <li><a href="#">Return & Exchanges</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-3 offset-lg-1 col-md-6 col-sm-6">
-                    <div class="footer__widget">
-                        <h6>NewLetter</h6>
-                        <div class="footer__newslatter">
-                            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
-                            <form action="#">
-                                <input type="text" placeholder="Your email">
-                                <button type="submit"><span class="icon_mail_alt"></span></button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                <!-- Container for the sidebar layout -->
+
             </div>
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -682,9 +592,9 @@
                         <p>Copyright ©
                             <script>
                                 document.write(new Date().getFullYear());
-                            </script>2020
-                            All rights reserved | This template is made with <i class="fa fa-heart-o"
-                                aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                            </script>2024
+                            All rights reserved <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                                href="https://www.instagram.com/selita.finesse/" target="_blank">Selita Finesse</a>
                         </p>
                         <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
                     </div>
@@ -716,6 +626,8 @@
     <script src="js/mixitup.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="./scripts.js"></script>
+
 </body>
 
 </html>
