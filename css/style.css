@@ -593,7 +593,7 @@ ol {
 }
 
 .hero__text h6 {
-	color: #000000;
+	color: #e53637;
 	font-size: 14px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -620,7 +620,6 @@ ol {
 	-o-transition: all, 0.6s;
 	transition: all, 0.6s;
 }
-
 
 .hero__text p {
 	font-size: 16px;
