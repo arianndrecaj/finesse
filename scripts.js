@@ -1,6 +1,6 @@
 // scripts.js
 
-function openModal(imageSrc) {
+function showModal(imageSrc) {
     document.getElementById("myModal").style.display = "block";
     document.getElementById("modalImage").src = imageSrc;
 }
@@ -46,6 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+
+
 
 
 // Toggle mobile menu visibility

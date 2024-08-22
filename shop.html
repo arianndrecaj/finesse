@@ -95,7 +95,7 @@
                                     <p>Showing 1–12 of 126 results</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6 col-md-6 col-sm-6">
+                            <!-- <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="shop__product__option__right">
                                     <p>Sort by Price:</p>
                                     <select>
@@ -104,7 +104,7 @@
                                         <option value="">$55 - $100</option>
                                     </select>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                     <div class="row">
@@ -112,7 +112,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p1.jpg"
-                                    onclick="openModal('img/product/p1.jpg')">
+                                    onclick="showModal('img/product/p1.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -143,7 +143,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p2.jpg"
-                                    onclick="openModal('img/product/p2.jpg')">
+                                    onclick="showModal('img/product/p2.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -156,21 +156,23 @@
 
                                     <h5>$43.48</h5>
                                     <!-- Unique Order link -->
-                                    <a href="#" id="orderTextP15" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
                                 </div>
                             </div>
                         </div>
 
                         <!-- Modal Structure -->
                         <div id="myModal" class="modal">
-                            <span class="close" onclick="closeModal()">&times;</span>
-                            <img class="modal-content" id="modalImage">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <img id="modalImage" src="" alt="Product Image">
+                            </div>
                         </div>
 
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p16.jpg"
-                                    onclick="openModal('img/product/p3.jpg')">
+                                    onclick="showModal('img/product/p3.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -183,7 +185,7 @@
 
                                     <h5>$60.9</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
                                 </div>
                             </div>
                         </div>
@@ -192,7 +194,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p4.jpg"
-                                    onclick="openModal('img/product/p4.jpg')">
+                                    onclick="showModal('img/product/p4.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -205,7 +207,7 @@
 
                                     <h5>$98.49</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
 
                                 </div>
                             </div>
@@ -215,7 +217,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p5.jpg"
-                                    onclick="openModal('img/product/p5.jpg')">
+                                    onclick="showModal('img/product/p5.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -228,14 +230,14 @@
 
                                     <h5>$49.66</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p14.jpg"
-                                    onclick="openModal('img/product/p6.jpg')">
+                                    onclick="showModal('img/product/p6.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -248,7 +250,7 @@
 
                                     <h5>$26.28</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
 
                                 </div>
                             </div>
@@ -256,7 +258,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p7.jpg"
-                                    onclick="openModal('img/product/p7.jpg')">
+                                    onclick="showModal('img/product/p7.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -269,7 +271,7 @@
 
                                     <h5>$67.24</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
 
                                 </div>
                             </div>
@@ -277,7 +279,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p31.jpg"
-                                    onclick="openModal('img/product/p8.jpg')">
+                                    onclick="showModal('img/product/p8.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -290,7 +292,7 @@
 
                                     <h5>$43.48</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
 
                                 </div>
                             </div>
@@ -298,7 +300,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p34.jpg"
-                                    onclick="openModal('img/product/p9.jpg')">
+                                    onclick="showModal('img/product/p9.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -311,7 +313,7 @@
 
                                     <h5>$60.9</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
 
                                 </div>
                             </div>
@@ -319,7 +321,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p10.jpg"
-                                    onclick="openModal('img/product/p10.jpg')">
+                                    onclick="showModal('img/product/p10.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -332,7 +334,7 @@
 
                                     <h5>$98.49</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
 
                                 </div>
                             </div>
@@ -340,7 +342,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p11.jpg"
-                                    onclick="openModal('img/product/p11.jpg')">
+                                    onclick="showModal('img/product/p11.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -353,7 +355,7 @@
 
                                     <h5>$49.66</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
 
                                 </div>
                             </div>
@@ -361,7 +363,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p39.jpg"
-                                    onclick="openModal('img/product/p12.jpg')">
+                                    onclick="showModal('img/product/p12.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -374,7 +376,7 @@
 
                                     <h5>$26.28</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
 
                                 </div>
                             </div>
@@ -382,7 +384,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p13.jpg"
-                                    onclick="openModal('img/product/p13.jpg')">
+                                    onclick="showModal('img/product/p13.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -395,7 +397,7 @@
 
                                     <h5>$26.28</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
 
                                 </div>
                             </div>
@@ -403,7 +405,7 @@
                         <div class="col-lg-4 col-md-6 col-sm-6">
                             <div class="product__item">
                                 <div class="product__item__pic set-bg" data-setbg="img/product/p37.jpg"
-                                    onclick="openModal('img/product/p14.jpg')">
+                                    onclick="showModal('img/product/p37.jpg')">
                                     <ul class="product__hover">
                                         <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
                                         <li><a href="#"><img src="img/icon/compare.png" alt=""> <span>Compare</span></a>
@@ -416,7 +418,7 @@
 
                                     <h5>$26.28</h5>
 
-                                    <a href="#" id="orderTextP2" class="order-text">Order Now</a>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
 
                                 </div>
                             </div>
@@ -428,9 +430,6 @@
                             <div class="product__pagination">
                                 <a class="active" href="#">1</a>
                                 <a href="./shop2.html">2</a>
-                                <a href="#">3</a>
-                                <span>...</span>
-                                <a href="#">21</a>
                             </div>
                         </div>
                     </div>

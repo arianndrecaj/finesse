@@ -47,8 +47,6 @@
 
 /* Style for the Order link */
 .order-text {
-    display: block;
-    margin-top: 10px;
     color: #007bff;
     /* Link color */
     text-decoration: none;
@@ -57,6 +55,7 @@
     /* Make the text bold */
     text-align: center;
     /* Center the text */
+
 }
 
 .order-text:hover {
