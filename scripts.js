@@ -50,6 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
 // Toggle mobile menu visibility
 // document.addEventListener('DOMContentLoaded', function () {
 //     const canvasOpen = document.querySelector('.canvas__open');
