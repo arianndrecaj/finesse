@@ -33,58 +33,49 @@
 
     <!-- Offcanvas Menu Begin -->
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-1 col-md-1">
-                <div class="header__logo">
-                    <a href="./index.html"><img src="img/logo.png" alt=""></a>
+    <!-- Header Section End -->
+
+    <!-- Breadcrumb Section Begin -->
+    <section class="breadcrumb-option">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="breadcrumb__text">
+                        <h4>Shop</h4>
+                        <div class="breadcrumb__links">
+                            <a href="./index.html">Home</a>
+                            <span>Shop</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        </header>
-        <!-- Header Section End -->
+    </section>
+    <!-- Breadcrumb Section End -->
 
-        <!-- Breadcrumb Section Begin -->
-        <section class="breadcrumb-option">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="breadcrumb__text">
-                            <h4>Shop</h4>
-                            <div class="breadcrumb__links">
-                                <a href="./index.html">Home</a>
-                                <span>Shop</span>
-                            </div>
+    <!-- Shop Section Begin -->
+    <section class="shop spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="shop__sidebar">
+                        <div class="shop__sidebar__search">
+                            <form action="#">
+                                <input type="text" placeholder="Search...">
+                                <button type="submit"><span class="icon_search"></span></button>
+                            </form>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!-- Breadcrumb Section End -->
-
-        <!-- Shop Section Begin -->
-        <section class="shop spad">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3">
-                        <div class="shop__sidebar">
-                            <div class="shop__sidebar__search">
-                                <form action="#">
-                                    <input type="text" placeholder="Search...">
-                                    <button type="submit"><span class="icon_search"></span></button>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-9">
-                        <div class="shop__product__option">
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-sm-6">
-                                    <div class="shop__product__option__left">
-                                        <p>Showing 1–12 of 126 results</p>
-                                    </div>
+                <div class="col-lg-9">
+                    <div class="shop__product__option">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-sm-6">
+                                <div class="shop__product__option__left">
+                                    <p>Showing 1–12 of 126 results</p>
                                 </div>
-                                <!-- <div class="col-lg-6 col-md-6 col-sm-6">
+                            </div>
+                            <!-- <div class="col-lg-6 col-md-6 col-sm-6">
                                 <div class="shop__product__option__right">
                                     <p>Sort by Price:</p>
                                     <select>
@@ -94,395 +85,394 @@
                                     </select>
                                 </div>
                             </div> -->
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <!-- Product Block on the new HTML page -->
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p15.jpg"
+                                    onclick="showModal('img/product/p15.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Moonlit Allure🔥✨</h6>
+
+                                    <h5>$67.24</h5>
+
+                                    <!-- Unique Order link -->
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="row">
-                            <!-- Product Block on the new HTML page -->
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p15.jpg"
-                                        onclick="showModal('img/product/p15.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Moonlit Allure🔥✨</h6>
-
-                                        <h5>$67.24</h5>
-
-                                        <!-- Unique Order link -->
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-                                    </div>
-                                </div>
+                        <!-- Modal Structure -->
+                        <div id="myModal" class="modal">
+                            <div class="modal-content">
+                                <span class="close" onclick="closeModal()">&times;</span>
+                                <img id="modalImage" src="" alt="Product Image">
                             </div>
+                        </div>
 
-                            <!-- Modal Structure -->
-                            <div id="myModal" class="modal">
-                                <div class="modal-content">
-                                    <span class="close" onclick="closeModal()">&times;</span>
-                                    <img id="modalImage" src="" alt="Product Image">
+
+
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p33.jpg"
+                                    onclick="showModal('img/product/p33.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
                                 </div>
-                            </div>
+                                <div class="product__item__text">
+                                    <h6>Moonlit Allure🔥✨</h6>
 
+                                    <h5>$43.48</h5>
 
-
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p33.jpg"
-                                        onclick="showModal('img/product/p33.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Moonlit Allure🔥✨</h6>
-
-                                        <h5>$43.48</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p30.jpg"
-                                        onclick="showModal('img/product/p30.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Moonlit Allure🔥✨</h6>
-
-                                        <h5>$60.9</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item sale">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p40.jpg"
-                                        onclick="showModal('img/product/p40.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Aqua Radiance🩵🦋</h6>
-
-                                        <h5>$98.49</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p41.jpg"
-                                        onclick="showModal('img/product/p41.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Aqua Radiance🩵🦋</h6>
-
-                                        <h5>$49.66</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p26.jpg"
-                                        onclick="showModal('img/product/p26.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Aqua Radiance🩵🦋</h6>
-
-                                        <h5>$26.28</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p32.jpg"
-                                        onclick="showModal('img/product/p32.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Midnight Majesty✨🌟</h6>
-
-                                        <h5>$67.24</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item sale">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p44.jpg"
-                                        onclick="showModal('img/product/p44.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Midnight Majesty✨🌟</h6>
-
-                                        <h5>$43.48</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p23.jpg"
-                                        onclick="showModal('img/product/p23.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Midnight Majesty✨🌟</h6>
-
-                                        <h5>$60.9</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item sale">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p38.jpg"
-                                        onclick="showModal('img/product/p38.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Petal Charm🌿✨</h6>
-
-                                        <h5>$98.49</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p36.jpg"
-                                        onclick="showModal('img/product/p36.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Petal Charmt🌿✨</h6>
-
-                                        <h5>$49.66</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p8.jpg"
-                                        onclick="showModal('img/product/p8.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Petal Charm🌿✨</h6>
-
-                                        <h5>$26.28</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p35.jpg"
-                                        onclick="showModal('img/product/p35.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Golden Dazzle💛🌟</h6>
-
-                                        <h5>$26.28</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 col-md-6 col-sm-6">
-                                <div class="product__item">
-                                    <div class="product__item__pic set-bg" data-setbg="img/product/p29.jpg"
-                                        onclick="showModal('img/product/p29.jpg')">
-                                        <ul class="product__hover">
-                                            <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
-                                            <li><a href="#"><img src="img/icon/compare.png" alt="">
-                                                    <span>Compare</span></a>
-                                            </li>
-                                            <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
-                                        </ul>
-                                    </div>
-                                    <div class="product__item__text">
-                                        <h6>Golden Dazzle💛🌟</h6>
-
-                                        <h5>$26.28</h5>
-
-                                        <a href="#" id="orderText" class="order-text">Order Now</a>
-
-                                    </div>
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
 
                                 </div>
                             </div>
                         </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="product__pagination">
-                                    <a href="./shop.html">1</a>
-                                    <a class="active" href="#">2</a>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p30.jpg"
+                                    onclick="showModal('img/product/p30.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Moonlit Allure🔥✨</h6>
+
+                                    <h5>$60.9</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item sale">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p40.jpg"
+                                    onclick="showModal('img/product/p40.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Aqua Radiance🩵🦋</h6>
 
+                                    <h5>$98.49</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p41.jpg"
+                                    onclick="showModal('img/product/p41.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Aqua Radiance🩵🦋</h6>
+
+                                    <h5>$49.66</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p26.jpg"
+                                    onclick="showModal('img/product/p26.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Aqua Radiance🩵🦋</h6>
+
+                                    <h5>$26.28</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p32.jpg"
+                                    onclick="showModal('img/product/p32.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Midnight Majesty✨🌟</h6>
+
+                                    <h5>$67.24</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item sale">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p44.jpg"
+                                    onclick="showModal('img/product/p44.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Midnight Majesty✨🌟</h6>
+
+                                    <h5>$43.48</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p23.jpg"
+                                    onclick="showModal('img/product/p23.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Midnight Majesty✨🌟</h6>
+
+                                    <h5>$60.9</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item sale">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p38.jpg"
+                                    onclick="showModal('img/product/p38.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Petal Charm🌿✨</h6>
+
+                                    <h5>$98.49</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p36.jpg"
+                                    onclick="showModal('img/product/p36.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Petal Charmt🌿✨</h6>
+
+                                    <h5>$49.66</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p8.jpg"
+                                    onclick="showModal('img/product/p8.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Petal Charm🌿✨</h6>
+
+                                    <h5>$26.28</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p35.jpg"
+                                    onclick="showModal('img/product/p35.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Golden Dazzle💛🌟</h6>
+
+                                    <h5>$26.28</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-6">
+                            <div class="product__item">
+                                <div class="product__item__pic set-bg" data-setbg="img/product/p29.jpg"
+                                    onclick="showModal('img/product/p29.jpg')">
+                                    <ul class="product__hover">
+                                        <li><a href="#"><img src="img/icon/heart.png" alt=""></a></li>
+                                        <li><a href="#"><img src="img/icon/compare.png" alt="">
+                                                <span>Compare</span></a>
+                                        </li>
+                                        <li><a href="#"><img src="img/icon/search.png" alt=""></a></li>
+                                    </ul>
+                                </div>
+                                <div class="product__item__text">
+                                    <h6>Golden Dazzle💛🌟</h6>
+
+                                    <h5>$26.28</h5>
+
+                                    <a href="#" id="orderText" class="order-text">Order Now</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="product__pagination">
+                                <a href="./shop.html">1</a>
+                                <a class="active" href="#">2</a>
+                            </div>
                         </div>
 
                     </div>
+
                 </div>
             </div>
-        </section>
-        <!-- Shop Section End -->
-
-        <!-- Footer Section Begin -->
-        <div class="col-lg-12 text-center">
-            <div class="footer__copyright__text">
-                <p>Copyright ©
-                    <script>
-                        document.write(new Date().getFullYear());
-                    </script>2024
-                    All rights reserved <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
-                        href="https://www.instagram.com/selita.finesse/" target="_blank">Selita Finesse</a>
-                </p>
-                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-            </div>
         </div>
-        <!-- Footer Section End -->
+    </section>
+    <!-- Shop Section End -->
 
-        <!-- Search Begin -->
-        <div class="search-model">
-            <div class="h-100 d-flex align-items-center justify-content-center">
-                <div class="search-close-switch">+</div>
-                <form class="search-model-form">
-                    <input type="text" id="search-input" placeholder="Search here.....">
-                </form>
-            </div>
+    <!-- Footer Section Begin -->
+    <div class="col-lg-12 text-center">
+        <div class="footer__copyright__text">
+            <p>Copyright ©
+                <script>
+                    document.write(new Date().getFullYear());
+                </script>2024
+                All rights reserved <i class="fa fa-heart-o" aria-hidden="true"></i> by <a
+                    href="https://www.instagram.com/selita.finesse/" target="_blank">Selita Finesse</a>
+            </p>
+            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
         </div>
-        <!-- Search End -->
+    </div>
+    <!-- Footer Section End -->
 
-        <!-- Js Plugins -->
-        <script src="js/jquery-3.3.1.min.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/jquery.nice-select.min.js"></script>
-        <script src="js/jquery.nicescroll.min.js"></script>
-        <script src="js/jquery.magnific-popup.min.js"></script>
-        <script src="js/jquery.countdown.min.js"></script>
-        <script src="js/jquery.slicknav.js"></script>
-        <script src="js/mixitup.min.js"></script>
-        <script src="js/owl.carousel.min.js"></script>
-        <script src="js/main.js"></script>
-        <script src="./scripts.js"></script>
-
-        <div id="orderModal" class="modal">
-            <div class="modal-content">
-                <span class="close">&times;</span>
-                <p>We are currently taking orders through our Instagram: <a
-                        href="https://www.instagram.com/selita.finesse/"
-                        target="_blank">https://www.instagram.com/selita.finesse/</a></p>
-            </div>
+    <!-- Search Begin -->
+    <div class="search-model">
+        <div class="h-100 d-flex align-items-center justify-content-center">
+            <div class="search-close-switch">+</div>
+            <form class="search-model-form">
+                <input type="text" id="search-input" placeholder="Search here.....">
+            </form>
         </div>
+    </div>
+    <!-- Search End -->
+
+    <!-- Js Plugins -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
+    <script src="js/jquery.nicescroll.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/jquery.slicknav.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="./scripts.js"></script>
+
+    <div id="orderModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>We are currently taking orders through our Instagram: <a href="https://www.instagram.com/selita.finesse/"
+                    target="_blank">https://www.instagram.com/selita.finesse/</a></p>
+        </div>
+    </div>
 
 
 </body>
